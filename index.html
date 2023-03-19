@@ -1,0 +1,168 @@
+<div class="container-fluid">
+  <h3>Bootstrap Booking Form:</h3>
+  <div class="well">Fill out the form and click the submit button when complete...</div>
+  <form>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="col">
+          <div class="row-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">User:</div>
+              <div class="panel-body">
+                <div class="col">
+                  <div class="row-lg-4">
+                    <div class="col-lg-4">
+                      <label for="username">Username:</label>
+                    </div>
+                    <div id="username-col" class="col-lg-8">
+                      <input id="username" type="username" class="form-control" placeholder="Type username...">
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div class="col-lg-4">
+                      <label for="first-name">First Name:</label>
+                    </div>
+                    <div id="firstname-col" class="col-lg-8">
+                      <input id="first-name" type="first-name" class="form-control" placeholder="Type first name...">
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div class="col-lg-4">
+                      <label for="last-name">Last Name:</label>
+                    </div>
+                    <div id="lastname-col" class="col-lg-8">
+                      <input id="last-name" type="last-name" class="form-control" placeholder="Type last name...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Contact:</div>
+              <div class="panel-body">
+                <div class="col">
+                  <div class="row-lg-4">
+                    <div id="phone-group" class="input-group">
+                      <div class="input-group-addon"><i class="fa-solid fa-phone"></i></div>
+                      <input id="phone" type="text" class="form-control" placeholder="Type phone#...">
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div id="fax-group" class="input-group">
+                      <div class="input-group-addon"><i class="fa-solid fa-fax"></i></div>
+                      <input id="fax" type="text" class="form-control" placeholder="Type fax#...">
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div id="email-group" class="input-group">
+                      <div class="input-group-addon"><i class="fa-solid fa-envelope"></i></div>
+                      <input id="email" type="text" class="form-control" placeholder="Type email...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Schedule:</div>
+              <div class="panel-body">
+                <div class="col">
+                  <div class="row-lg-4">
+                    <div class="form-group">
+                      <label for="dropdown">Adults:</label>
+                      <div class="dropdown">
+                        <button id="dropdown" class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" value="1"><span id="dropdown-text">1</span><i class="fa-solid fa-angle-down"></i></button>
+                        <ul id="dropdown-options" class="dropdown-menu">
+                          <li><a id="dropdown-1" class="dropdown-opt">1</a></li>
+                          <li><a id="dropdown-2" class="dropdown-opt">2</a></li>
+                          <li><a id="dropdown-3" class="dropdown-opt">3</a></li>
+                          <li><a id="dropdown-4" class="dropdown-opt">4</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="check-in">Check-In:</label>
+                          <input id="check-in" class="form-control" type="date"></input>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="check-out">Check-Out:</label>
+                          <input id="check-out" class="form-control" type="date"></input>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="days">Days:</label>
+                          <input id="days" class="form-control" placeholder="Displays days..." readonly></input>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="cost">Cost($):</label>
+                          <input id="cost" class="form-control" placeholder="Displays cost..." readonly></input>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Other:</div>
+          <div class="panel-body">
+            <div class="col">
+              <div class="row-lg-4">
+                <label for="message">Message:</label>
+                <textarea id="message" class="form-control" placeholder="Type message here..." rows="23"></textarea>
+              </div>
+              <div class="row-lg-4">
+                <label for="range">Range:</label>
+                <input id="range" type="range" min="1" max="10" class="form-control"></input>
+              </div>
+              <div class="row-lg-4">
+                <label for="priority">Priority:</label>
+                <div id="priority">
+                  <label class="priority" for="low"><input id="low" class="rad" type="radio" name="priorities"></input> Low &nbsp;</label>
+                  <label class="priority" for="med"><input id="med" class="rad" type="radio" name="priorities"></input> Med &nbsp;</label>
+                  <label class="priority" for="high"><input id="high" class="rad" type="radio" name="priorities"></input> High &nbsp;</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-8">
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <button id="reset" class="btn btn-primary form-control bottom-button"><i class="fa-solid fa-eraser"></i> Reset</button>
+          </div>
+          <div class="col-lg-6">
+            <button id="submit" class="btn btn-success form-control bottom-button" type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

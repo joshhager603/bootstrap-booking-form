@@ -1,0 +1,40 @@
+h3{
+  color: red;
+  font-weight: bold;
+}
+
+div{
+  font-weight: bold;
+}
+
+#dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dropdown-options{
+  width: 100%;
+}
+
+#range{
+  display: flex;
+  box-shadow: none;
+}
+
+.priority{
+  font-weight: normal;
+}
+
+hr{
+  margin-top: .25rem;
+}
+
+.bottom-button{
+  font-weight: bold;
+}
+
+#dropdown-text{
+  font-weight: normal;
+}
+
